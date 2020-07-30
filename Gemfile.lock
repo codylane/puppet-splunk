@@ -187,7 +187,7 @@ GEM
       json
     json (1.8.3)
     json_pure (1.8.3)
-    jwt (1.5.3)
+    jwt (1.5.6)
     little-plugger (1.1.4)
     logging (2.0.0)
       little-plugger (~> 1.1)
@@ -227,7 +227,7 @@ GEM
       puppet-syntax
       rake
       rspec-puppet
-    rake (10.5.0)
+    rake (13.0.1)
     rbvmomi (1.8.2)
       builder
       nokogiri (>= 1.4.1)
