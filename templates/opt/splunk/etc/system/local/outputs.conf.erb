@@ -1,0 +1,24 @@
+#### THIS FILE MANAGED BY PUPPET ####
+[tcpout]
+<% if @tcpout_disabled == false || @tcpout_disabled == 'false' || @tcpout_disabled == 'False' -%>
+defaultGroup = <%= @defaultgroup %>
+disabled = <%= @tcpout_disabled %>
+
+<% @groupkeys.sort.each do |group| -%>
+[tcpout:<%= group -%>]
+server = <%= @target_group[group] -%>:<%= @port %>
+
+<% end -%>
+<% end -%>
+<% if @indexandforward == true || @indexandforward == 'true' || @indexandforward == 'True' -%>
+indexAndForward = True
+<% end -%>
+
+<% @output_title.sort.each do |outputname| -%>
+[<%= outputname -%>]
+<% @output_hash[outputname].sort.each do |key,value| -%>
+<%= key -%> = <%= value %>
+<% end %>
+<% end -%>
+
+#### THIS FILE MANAGED BY PUPPET ####
