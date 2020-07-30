@@ -1,0 +1,11 @@
+HOSTS:
+  splunkforwarder:
+    roles:
+      - master
+      - agent
+    platform: el-6-x86_64
+    hypervisor: vagrant
+    box: centos-6u5-64-nocm
+    vb_gui: false
+CONFIG:
+  type: foss

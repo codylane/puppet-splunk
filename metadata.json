@@ -1,0 +1,33 @@
+{
+  "name": "puppet-splunk",
+  "version": "2020.7.30",
+  "author": "codylane",
+  "summary": "A module for managing splunk",
+  "license": "Apache-2.0",
+  "source": "https://github.com/codylane/puppet-splunk",
+  "project_page": "https://github.com/codylane/puppet-splunk",
+  "issues_url": "https://github.com/codylane/puppet-splunk",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
+

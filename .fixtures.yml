@@ -1,0 +1,10 @@
+fixtures:
+  repositories:
+    stdlib:
+      repo: 'git://github.com/puppetlabs/puppetlabs-stdlib.git'
+      ref: '4.1.0'
+    inifile:
+      repo: 'git://github.com/puppetlabs/puppetlabs-inifile.git'
+      ref: '1.4.3'
+  symlinks:
+    splunk: "#{source_dir}"
